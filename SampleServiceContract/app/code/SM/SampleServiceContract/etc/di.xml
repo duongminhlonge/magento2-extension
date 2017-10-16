@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="SM\SampleServiceContract\Model\ResourceModel\Sample\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">sm_data_table</argument>
+            <argument name="resourceModel" xsi:type="string">SM\SampleServiceContract\Model\ResourceModel\Sample</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="sm_sampleservicecontract_listing_data_source" xsi:type="string">SM\SampleServiceContract\Model\ResourceModel\Sample\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <preference for="SM\SampleServiceContract\Api\Data\SampleSearchResultsInterface"
+                type="Magento\Framework\Api\SearchResults" />
+    <preference for="SM\SampleServiceContract\Api\Data\SampleInterface" type="SM\SampleServiceContract\Model\Sample" />
+    <preference for="SM\SampleServiceContract\Api\SampleRepositoryInterface" type="SM\SampleServiceContract\Model\SampleRepository" />
+</config>

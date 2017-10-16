@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="SM_SampleServiceContract::ssc" title="SSC" module="SM_SampleServiceContract" sortOrder="90" resource="SM_SampleServiceContract::ssc"/>
+        <add id="SM_SampleServiceContract::resources" title="Resources" module="SM_SampleServiceContract" parent="SM_SampleServiceContract::ssc" sortOrder="90" resource="SM_SampleServiceContract::resources"/>
+        <add id="SM_SampleServiceContract::sample" title="Sample" module="SM_SampleServiceContract" parent="SM_SampleServiceContract::resources" sortOrder="90" action="sm_sampleservicecontract/sample/"  resource="SM_SampleServiceContract::sample"/>
+    </menu>
+</config>
