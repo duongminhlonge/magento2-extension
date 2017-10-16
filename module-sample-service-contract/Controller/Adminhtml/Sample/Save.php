@@ -9,6 +9,8 @@ class Save extends \SM\SampleServiceContract\Controller\Adminhtml\Sample
     protected $sampleFactory;
 
     /**
+     * @var \SM\SampleServiceContract\Api\SampleRepositoryInterface
+     */
     protected $sampleRepository;
 
     /**
