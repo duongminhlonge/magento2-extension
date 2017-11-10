@@ -1,0 +1,7 @@
+Name,Path,Description,Position,Is_Active
+Category,Default Category,Test Description,1,1
+Category 1,"Default Category, Category",,2,1
+Category 2,"Default Category, Category",,1,1
+Category 1.1,"Default Category, Category, Category 1",,1,1
+Category 2.1,"Default Category, Category, Category 2",,1,1
+Category 4,Default Category,,1,1

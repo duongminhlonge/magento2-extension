@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="SM_IECategory::iec" title="IECategory" module="SM_IECategory" sortOrder="90" resource="SM_IECategory::iec"/>
+        <add id="SM_IECategory::resources" title="Resources" module="SM_IECategory" parent="SM_IECategory::iec" sortOrder="90" resource="SM_IECategory::resources"/>
+        <add id="SM_IECategory::import" title="Import Category" module="SM_IECategory" parent="SM_IECategory::resources" sortOrder="90" action="sm_iecategory/import/index"  resource="SM_IECategory::import"/>
+        <add id="SM_IECategory::export" title="Export Category" module="SM_IECategory" parent="SM_IECategory::resources" sortOrder="100" action="sm_iecategory/export/index"  resource="SM_IECategory::export"/>
+    </menu>
+</config>
